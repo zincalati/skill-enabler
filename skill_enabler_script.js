@@ -1,12 +1,3 @@
-if (window.jQuery === undefined) {
-    var script    = document.createElement( 'script' );
-    script.src    = 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js';
-    script.onload = function() { fillForm; }
-    document.body.appendChild(script);
-}
-else {
-    fillForm();
-}
 
 function fillForm() {
        var games_cnt = 0;
@@ -31,4 +22,14 @@ function fillForm() {
              data: $data,
              success: function() { setTimeout(fillForm, 60 * 1000); }
           });
+}
+
+if (window.jQuery === undefined) {
+    var script    = document.createElement( 'script' );
+    script.src    = 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js';
+    script.onload = function() { fillForm; }
+    document.body.appendChild(script);
+}
+else {
+    fillForm();
 }
