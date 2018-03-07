@@ -26,7 +26,7 @@ function fillForm() {
 
 if (window.jQuery === undefined) {
     var script    = document.createElement( 'script' );
-    script.src    = 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js';
+    script.src    = 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js';
     script.onload = function() { fillForm; }
     document.body.appendChild(script);
 }
