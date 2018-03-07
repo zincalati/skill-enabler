@@ -1,3 +1,5 @@
+fillform();
+
 function fillForm() {
 	var games_cnt = 0;
 	var op = ["Enable", "Disable"];
